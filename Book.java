@@ -13,6 +13,7 @@ class Book
     private String title;
     private int pages;
     private String refNumber;
+    private int borrowed;
 
     /**
      * Set the author and title fields when this object
@@ -49,6 +50,10 @@ class Book
      return this.refNumber;   
     }
     
+    public int getBorrowed(){
+     return this.borrowed;   
+    }
+    
     //2.90
     public void setRefNumber(String _refNumber){
         
@@ -60,6 +65,10 @@ class Book
         }
         
        
+    }
+    
+    public void borrow(){
+     borrowed++;   
     }
     
     //2.84 create print methods that print the Author and Title fields respectively,
@@ -85,6 +94,7 @@ class Book
      System.out.println("Title: " + this.title);
      System.out.println("Author: " + this.author);
      System.out.println("Pages: " + this.pages);
+     System.out.println("Times Borrowed: " + this.borrowed);
      
      if (this.refNumber.length() > 0){
          System.out.println("Reference Number: " + refNumber);
