@@ -34,6 +34,16 @@ class Book
     public String getTitle(){
      return this.title;   
     }
+    
+    //2.84 create print methods that print the Author and Title fields respectively,
+    // to the terminal window
+    public void printAuthor() {
+        System.out.println(this.author);
+    }
+    
+    public void printTitle(){
+        System.out.println(this.title);
+    }
 
     // Add the methods here ...
 }
