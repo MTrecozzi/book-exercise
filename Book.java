@@ -12,6 +12,7 @@ class Book
     private String author;
     private String title;
     private int pages;
+    private String refNumber;
 
     /**
      * Set the author and title fields when this object
@@ -23,6 +24,7 @@ class Book
         author = bookAuthor;
         title = bookTitle;
         pages = _pages;
+        refNumber = "";
     }
     
     // 2.83 
@@ -41,6 +43,14 @@ class Book
     // 2.85 pages Accessor
     public int getPages(){
      return this.pages;   
+    }
+    
+    public String getRefNumber(){
+     return this.refNumber;   
+    }
+    
+    public void setRefNumber(String _refNumber){
+     this.refNumber = _refNumber;   
     }
     
     //2.84 create print methods that print the Author and Title fields respectively,
