@@ -54,5 +54,18 @@ class Book
     }
 
     // As of 2.86 the book objects we create are currently immuatble
+    
+    // 2.87 printDetails
+    /**
+     * Method that prints the details of the author, title, and pages to the terminal window
+     * format appropriately
+     * 
+     */
+    
+    public void printDetails(){
+     System.out.println("Title: " + this.title);
+     System.out.println("Author: " + this.author);
+     System.out.println("Pages: " + this.pages);
+    }
     // Add the methods here ...
 }
