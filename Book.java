@@ -53,5 +53,6 @@ class Book
         System.out.println(this.title);
     }
 
+    // As of 2.86 the book objects we create are currently immuatble
     // Add the methods here ...
 }
