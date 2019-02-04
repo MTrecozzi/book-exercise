@@ -49,8 +49,17 @@ class Book
      return this.refNumber;   
     }
     
+    //2.90
     public void setRefNumber(String _refNumber){
-     this.refNumber = _refNumber;   
+        
+        if (_refNumber.length() >= 3){
+            this.refNumber = _refNumber; 
+            System.out.println("Reference Number Updated");
+        } else {
+         System.out.println("Error: The Reference Number should be a string with 3 or more characters");   
+        }
+        
+       
     }
     
     //2.84 create print methods that print the Author and Title fields respectively,
